@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - SA-MP Hosting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Server Settings</h1>
+    </header>
+
+    <main>
+        <h2>Configure Your Server</h2>
+        <form id="settingsForm">
+            <label for="serverName">Server Name:</label>
+            <input type="text" id="serverName" name="serverName" required>
+
+            <label for="gameMode">Game Mode:</label>
+            <input type="text" id="gameMode" name="gameMode" required>
+
+            <input type="submit" value="Save Settings">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SA-MP Hosting</p>
+    </footer>
+
+    <script>
+        document.getElementById('settingsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Settings saved successfully!');
+        });
+    </script>
+</body>
+</html>
